@@ -255,6 +255,10 @@
     .hero-inner { grid-template-columns: 1fr; }
     .hero { padding: 110px 0 60px; }
     .hero-visual { max-width: 420px; margin: 0 auto; }
+    .hero-badge { top: 16px; left: 16px; font-size: 11px; padding: 6px 12px; }
+    .hero-rating { top: 16px; right: 16px; padding: 8px 11px; }
+    .hero-rating .stars { font-size: 11px; letter-spacing: 0.5px; }
+    .hero-rating .rating-num { font-size: 15px; }
   }
 
   /* ── MARQUEE / RIBBON ────────────────────────────────────────────── */
@@ -336,7 +340,13 @@
   }
   .sig-title { font-family: 'Fraunces', serif; font-size: 22px; font-weight: 600; line-height: 1.1; margin-bottom: 6px; }
   .sig-sub { font-size: 13px; opacity: 0.9; }
-  @media (max-width: 900px) { .sig-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 900px) {
+    .sig-grid { grid-template-columns: repeat(2, 1fr); }
+    .sig-card { padding: 16px; }
+    .sig-title { font-size: 16px; }
+    .sig-sub { font-size: 12px; }
+    .sig-photo-label { top: 30%; font-size: 13px; }
+  }
 
   /* ── MENU ────────────────────────────────────────────────────────── */
   #menu { background: var(--cream); }
@@ -792,7 +802,6 @@
     <div class="section-head">
       <div class="eyebrow" style="display: inline-flex; margin-bottom: 16px;">Full Menu</div>
       <h2>Every drink, <em>every day</em>.</h2>
-      <p>Most drinks $6.25–$8.25 · 16oz or 24oz · Extra matcha shot +$0.75</p>
     </div>
 
     <div class="menu-tabs">
@@ -889,7 +898,7 @@
     </div>
     <div class="story-text">
       <div class="eyebrow">Our Story</div>
-      <h2>Small café.<br/><em>Big leaf energy.</em></h2>
+      <h2>Matcha for everyone,<br/><em>whisked by hand.</em></h2>
       <p>Mai Matcha Café is a women-owned tea bar in Laredo, Texas — built around one stubborn idea: that good matcha shouldn't be a luxury reserved for tasting menus and ceremonies.</p>
       <p>We import ceremonial-grade matcha and whisk every cup by hand with a bamboo chasen. We pair it with Tex-Mex traditions like the concha, kawaii merch from Miffy to Totoro, and the kind of cozy, quiet room you want to spend a Saturday morning in.</p>
       <p>Tradition. Trend. Tex-Mex. All in one cup.</p>
